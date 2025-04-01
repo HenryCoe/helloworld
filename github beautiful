@@ -13,3 +13,14 @@ then
     export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
 fi
 ' --tag-name-filter cat -- --branches --tags
+
+
+
+// all git name and email
+git filter-branch -f --env-filter " GIT_AUTHOR_NAME='James-9285' GIT_AUTHOR_EMAIL='jamesjinn9285@gmail.com' GIT_COMMITTER_NAME='James-9285' GIT_COMMITTER_EMAIL='jamesjinn9285@gmail.com'" HEAD
+git remote remove origin
+git remote add origin https://github.com/sweetdream-001/java-sam.git
+git checkout -b main
+git add .
+git commit -m "First push"
+git push -u origin main
