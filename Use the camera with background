@@ -1,0 +1,10 @@
+// To connect the local camera into the VMware. how do I have to do?
+First, Set to the item: I have to set the item 'Accelerate 3D graphics' on on the 'Virtual Machine Settings' Dialog before starting the VMware.
+Second. Set to the item such as 'install VM Tools'
+ - Under VM menu, install VM Tools after running the VMware.
+ - In the virtual disc, installed the VM Tools by clicking the VMTools
+Third. Set to the item such as 'Connect(Disconnect from the Host' under 'VM/Removable/Camera'(I think you have to set this item every runtime.'
+Fourth, Force Hardware Acceleration in Chrome in guest IOS(in VMware)
+ - Open chrome://flags in Chrome.
+ - Search for "Override software rendering list" and set it to "Enabled."
+ - Relaunch Chrome and check chrome://gpu to confirm that hardware acceleration is active.
